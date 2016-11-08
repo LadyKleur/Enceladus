@@ -1,0 +1,128 @@
+/* Color palette 
+
+Orange: #b66421;
+Dark Grey: #2d2d2d;
+Light Grey: #dbdbdb;
+
+*/
+
+* { 
+  box-sizing: border-box; 
+}
+
+body { 
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000;
+  color: #dbdbdb;
+  font-family: 'Rokkitt', serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: 0.3em;
+  color: #b66421;
+}
+
+a {
+  color: #dbdbdb;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(182, 100, 33, 0);
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+
+a:hover {
+  color: #b66421;
+  border-color: rgba(182, 100, 33, 1);
+}
+
+nav {
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: #2d2d2d;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  font-family: 'Rokkitt', serif;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav li:first-child {
+  margin-left: -40px;
+}
+
+[id^="section-"] {
+  margin: 0 auto;
+  height: 90vh;
+}
+
+#section-1 {
+  position: relative;
+  background-color: #000;         /* Remove later */
+}
+
+.subtitle {
+  display: block;
+  font-size: 1em;
+  font-weight: 300;
+  width: 45em;
+  margin: 0 auto;
+}
+
+.chevron {
+    background: #b66421;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
+
+.chevron:before {
+    border-top: 21vh solid #b66421;
+    border-left: 49vw solid transparent;
+    border-right: 49vw solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 65vh;
+    width: 0;
+}
+
+.chevron-inner {
+    background: #2d2d2d;
+    display: inline-block;
+    height: 60vh;
+    position: relative;
+    width: 100%;
+}
+
+.chevron-inner:before {
+    border-top: 20vh solid #2d2d2d;
+    border-left: 49vw solid transparent;
+    border-right: 49vw solid transparent;
+    content: "";
+    position: absolute;
+    top: 60vh;
+}
+
+#section-2 {
+  background-color: #f00;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-width: 300px;
+  column-width: 300px;
+}
