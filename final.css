@@ -17,6 +17,7 @@ body {
   color: #dbdbdb;
   font-family: 'Rokkitt', serif;
   font-weight: 300;
+  font-size: 1em;
 }
 
 h1 {
@@ -71,7 +72,6 @@ nav li:first-child {
 
 #section-1 {
   position: relative;
-  background-color: #000;         /* Remove later */
 }
 
 .subtitle {
@@ -120,9 +120,24 @@ nav li:first-child {
 }
 
 #section-2 {
-  background-color: #f00;
+  background: url('assets/enceladus_silhouette.png') no-repeat 50% 0;
+  background-size: 35%;
+}
+
+#section-2 p {
   -webkit-column-count: 2;
   column-count: 2;
   -webkit-column-width: 300px;
   column-width: 300px;
+  width: 45em;
+  margin: 0 auto;
+}
+
+#section-3 {
+  background: url('assets/saturn_overlook2.png') no-repeat;
+  background-size: auto 100%;
+}
+
+#section-3 h1 {
+
 }
