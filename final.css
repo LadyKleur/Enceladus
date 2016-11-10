@@ -119,7 +119,7 @@ nav li:first-child {
 }
 
 #section-2 {
-  background: url('assets/enceladus_silhouette.png') no-repeat 50% 0;
+  background: url('enceladus_silhouette.png') no-repeat 50% 0;
   background-size: 35%;
 }
 
@@ -132,7 +132,7 @@ nav li:first-child {
 }
 
 #section-3 {
-  background: url('assets/saturn_overlook2.png') no-repeat;
+  background: url('saturn_overlook2.png') no-repeat;
   background-size: auto 100%;
 }
 
