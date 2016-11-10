@@ -17,22 +17,22 @@ body {
   color: #dbdbdb;
   font-family: 'Rokkitt', serif;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 4em;
+  font-size: 4rem;
   text-align: center;
-  letter-spacing: 0.3em;
+  letter-spacing: 1rem;
   color: #b66421;
 }
 
 a {
   color: #dbdbdb;
   text-decoration: none;
-  border-bottom: 2px solid rgba(182, 100, 33, 0);
+  border-bottom: 0.1rem solid rgba(182, 100, 33, 0);
   transition: .3s;
   -webkit-transition: .3s;
 }
@@ -45,7 +45,7 @@ a:hover {
 nav {
   top: 0;
   width: 100%;
-  padding: 5px;
+  padding: 0.5rem;
   background-color: #2d2d2d;
   text-align: center;
 }
@@ -58,11 +58,11 @@ nav li {
   font-family: 'Rokkitt', serif;
   font-weight: 500;
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 1.5rem;
 }
 
 nav li:first-child {
-  margin-left: -40px;
+  margin-left: -3rem;
 }
 
 [id^="section-"] {
@@ -76,9 +76,9 @@ nav li:first-child {
 
 .subtitle {
   display: block;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 300;
-  width: 45em;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -91,15 +91,13 @@ nav li:first-child {
 }
 
 .chevron:before {
-    border-top: 21vh solid #b66421;
-    border-left: 49vw solid transparent;
-    border-right: 49vw solid transparent;
     content: "";
-    height: 0;
-    left: 0;
     position: absolute;
     top: 65vh;
     width: 0;
+    border-top: 21vh solid #b66421;
+    border-left: 49.3vw solid transparent;
+    border-right: 49.3vw solid transparent;
 }
 
 .chevron-inner {
@@ -111,33 +109,46 @@ nav li:first-child {
 }
 
 .chevron-inner:before {
-    border-top: 20vh solid #2d2d2d;
-    border-left: 49vw solid transparent;
-    border-right: 49vw solid transparent;
     content: "";
     position: absolute;
     top: 60vh;
+    width: 0;
+    border-top: 20vh solid #2d2d2d;
+    border-left: 49.3vw solid transparent;
+    border-right: 49.3vw solid transparent;
 }
 
 #section-2 {
-  background: url('enceladus_silhouette.png') no-repeat 50% 0;
+  background: url('assets/enceladus_silhouette.png') no-repeat 50% 0;
   background-size: 35%;
 }
 
 #section-2 p {
-  -webkit-column-count: 2;
-  column-count: 2;
-  -webkit-column-width: 300px;
-  column-width: 300px;
-  width: 45em;
+  -webkit-columns: 2 15rem;
+  -moz-columns: 2 15rem;
+  columns: 2;
+  max-width: 65%;
   margin: 0 auto;
 }
 
 #section-3 {
-  background: url('saturn_overlook2.png') no-repeat;
+  background: url('assets/saturn_overlook2.png') no-repeat;
   background-size: auto 100%;
 }
 
 #section-3 h1 {
+  text-align: right;
+  margin-right: 0.9em;
+}
 
+#section-3 p {
+  margin-right: 9em;
+  float: right;
+  width: 30em;
+}
+
+#section-3 p:after {
+  content: "";
+  display: table;
+  clear: both;
 }
