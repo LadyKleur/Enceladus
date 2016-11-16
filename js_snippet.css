@@ -31,7 +31,7 @@ body {
     margin-left: -100vw;
     background-size: 240px;
     backface-visibility: visible;
-    background-image: url('stars1.SVG');
+    background-image: url('stars1.svg');
     background-size: 7em auto;
 }
 
@@ -47,7 +47,7 @@ body {
     margin-left: -100vw;
     background-size: 240px;
     backface-visibility: visible;
-    background-image: url('stars2.SVG');
+    background-image: url('stars2.svg');
     background-size: 10em auto;
 }
 
@@ -63,7 +63,7 @@ body {
     margin-left: -100vw;
     background-size: 240px;
     backface-visibility: visible;
-    background-image: url('stars3.SVG');
+    background-image: url('stars3.svg');
     background-size: 13em auto;
 }
 
