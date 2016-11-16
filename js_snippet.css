@@ -1,0 +1,75 @@
+* {
+  overflow: hidden;
+}
+
+body {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate( 0deg );
+    }
+
+    to {
+        transform: rotate( 360deg );
+    }
+}
+
+.stars1 {
+    animation: spin 500s linear infinite;
+    opacity: 0.5;
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    top: 50%;
+    left: 50%;
+    margin-top: -100vh;
+    margin-left: -100vw;
+    background-size: 240px;
+    backface-visibility: visible;
+    background-image: url(stars1.SVG);
+    background-size: 7em auto;
+}
+
+.stars2 {
+    animation: spin 200s linear infinite;
+    opacity: 0.5;
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    top: 50%;
+    left: 50%;
+    margin-top: -100vh;
+    margin-left: -100vw;
+    background-size: 240px;
+    backface-visibility: visible;
+    background-image: url(stars2.SVG);
+    background-size: 10em auto;
+}
+
+.stars3 {
+    animation: spin 150s linear infinite;
+    opacity: 0.5;
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    top: 50%;
+    left: 50%;
+    margin-top: -100vh;
+    margin-left: -100vw;
+    background-size: 240px;
+    backface-visibility: visible;
+    background-image: url(stars3.SVG);
+    background-size: 13em auto;
+}
+
+.shootingStar {
+    position: absolute;
+    height: 20px;
+    bottom: -20px;
+    left: 0;
+}
